@@ -1,0 +1,27 @@
+<html>
+<body>
+
+<script>
+
+function change() {
+var value=document.getElementById('validation').innerText=document.getElementById('field1').value;
+
+
+if (value.length>=3 && value.length<=15)
+{
+document.getElementById('validation').innerText='OK';
+window.location.href="http://www.google.com";
+
+}
+ 
+}
+</script>
+
+<form>
+  First name:<br>
+  <input type="text" name="firstname" id="field1" onkeyup="change()"/><span id="validation">Not entered anything</span>
+</form> 
+
+
+</body>
+</html>
