@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>form</title>
+        <link rel="stylesheet" href="mainip.css">
+    </head>
+    
+    <body>
+             
+      <section class="log-form">        
+         <div class="container">
+           <div class="title">
+             <h1>Сторінка авторизації</h1>
+           </div>
+           <div class="form"  style = 'text-align: center'>
+             <form name="loginform" onSubmit="return validateForm();" method="post">   
+               <input class="ite-feedback-inp" placeholder="Login" type="text" name="login" id="log" required><br>
+               <input class="ite-feedback-inp" placeholder="Password" type="password" name="password" id="pas" required><br>
+              <div class="btn-wrap text-center">
+               <input value="Log in" class="btn" type="submit" id="submit">
+              </div>
+            </form>>
+          </div>
+         </div>  
+     </section>
+        
+        <script>
+            
+  function validateForm() {
+        var login = document.loginform.usr.value;
+        var password = document.loginform.pword.value;
+        
+     if (login.length<=3 || login.length>=15) {
+  // something is wrong
+  alert('Invalid username');
+  return false;
+  }
+  
+  if (password.length>=8) {
+  // something else is wrong
+  alert('Invalid password');
+  return false;
+  }
+  return true;
+  {
+document.getElementById('submit').innerText='OK';
+window.location.href="http://www.google.com";
+
+}
+  }
+  
+</script>    
+    
+        
+   </body>
+</html>
