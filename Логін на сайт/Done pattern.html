@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--Через регулярні вирази-->
 <html>
 <head>
 <link rel="stylesheet" href="Log in.css">
@@ -8,18 +8,17 @@
 <body>
 <script> 
 function LogIn(obj) {
-var l = obj.login.value;
-var p = obj.pass.value;
-var l_pat = /[a-z0-9]{4-15}/i;
-var p_pat = /[[a-z]{1,}[0-9]{1,}|[0-9]{1,}[a-z]{1,}]{8,}/i;
-var prov1 = l_pat.test(l);
-var prov2 = p_pat.test(p);
-if(prov1==true && prov2==true)
-{ 
-window.location.href="index.html"
-} 
-else alert ("lala");
-}
+  var l = obj.login.value;
+  var p = obj.pass.value;
+  var l_pattern = /[0-9a-z]{4,15}/i;
+  var p_pattern = /[a-z]+[0-9]|[0-9]+[a-z]/i;
+  var prov1 = l_pattern.test(l);
+  var prov2 = p_pattern.test(p);
+  if(prov1==true && prov2==true && p.length>7){
+  window.location.href="index.html"
+  } 
+  else alert ("lala");
+  }
 </script> 
 <form name="login1">
 <table>
