@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Log in.css">
+<meta charset="utf-8">
+	<title>test</title>
+	<style type="text/css">
+	body{
+		background: url('wpapers_ru_MacBook-вскрытие.jpg');
+		background-attachment: fixed;
+		background-size: 100% 100%;
+	} 
+	form{
+		position: relative;
+		left: 450px;
+		top: 200px;
+
+}
+	</style>
+</head>
+<body>
+<script> 
+function LogIn(form) {
+var l = document.getElementById('field1').value;
+var p = document.getElementById('field2').value;
+if(l!="" && p!="" && l.length>2 && l.length<15 && p.length>7 && isNaN(p)==true)
+{ 
+window.location.href="index.html"
+} 
+else alert ("lala");
+}
+</script> 
+<form name="login">
+<table>
+<tr>
+<td><input name="login" class="input" placeholder="Login" id="field1" required="11"></td>
+</tr>
+<tr>
+<td><input name="pass" class="input" placeholder="Password" id="field2"></td>
+</tr>
+<tr class="button1"><td><input type="button" class="button" onClick="LogIn();" value="Log In"></td></tr>
+</table>
+</form>
+</body>
+</html>
