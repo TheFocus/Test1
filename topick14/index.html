@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>test</title>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/tdbs/jquery/3.0.0-beta1/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function (){
+            function init() {
+                if (localStorage["pib"]) {
+                            $('#name').val(localStorage["pib"]);
+                                 }      
+                if (localStorage["email"]) {
+                            $('#email').val(localStorage["email"]);     
+                                              }       
+                if (localStorage["tel_number"]) {
+                            $('#message').val(localStorage["tel_number"]);  
+
+                                                             }  
+                if (localStorage["maitdng_adress"]) {
+                            $('#name').val(localStorage["maitdng_adress"]);
+                                 }   
+                if (localStorage["adress"]) {
+                            $('#name').val(localStorage["adress"]);
+                                 } 
+                if (localStorage["adress"]) {
+                            $('#name').val(localStorage["adress"]);
+                                 }       
+                                 }    
+                                 init();
+                                 });
+                             $('.stored').keyup(function () { 
+                             localStorage[$(this).attr('name')] = $(this).val();
+                                  });
+                             $('#localStorageTest').submit(function() {    localStorage.clear();
+                                  });
+                                                                
+    </script>
+</head>
+    <body>
+        <header></header>
+        <nav></nav>
+        <section>
+        <form name="form1" method="post">
+        <table>
+        <tr><td>Enter your first and last names</td> <td><input type="text" name="pib"></td></tr>
+        <tr><td>Enter your phone number</td> <td> <input type="tel" name="tel_number"></td></tr>
+        <tr><td>Enter your maitdng adress</td> <td><input type="text" name="maitdng_adress"></td></tr>
+        <tr><td>Enter your adress</td> <td><input type="text" name="adress"></td></tr>
+        <tr><td>Enter your professional skills</td> <td><input type="text" name="skills"></td></tr>
+        <tr><td>Enter your hobbies</td> <td><input type="text" name="hobbies"></td></tr>
+        <tr><td>Enter your birth date</td> <td><input type="date" name="birth_date"></td></tr>
+        <tr><td>Enter your email</td> <td><input type="email" name="email"></td></tr>
+        <tr><td><input type="submit" value="submit"></td></tr>
+        </table>
+        </form>
+        <article></article>
+            <aside></aside>
+        </section>
+        <aside></aside>
+        <footer></footer>
+    </body>
+</html>
