@@ -1,0 +1,15 @@
+body{
+          background: linear-gradient(transparent 50%, #99FF99 50%),
+          linear-gradient(90deg, #99FF99 50%, transparent 50%);
+          background-size: 50px 50px;
+          color: #CC0033;
+        }
+        .form{
+        text-align: center; 
+        position: relative; 
+        left: 550px;
+        top: 100px;
+        width: 200px; 
+        height: 400px; 
+        background-color: white;
+        }
