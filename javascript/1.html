@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="utf-8">
+	
+</head>
+<body>
+
+<script type="text/javascript">                                                                               //Перше завдання
+	    var name= prompt("Введіть Ваше ім'я", "    ");
+        if (name.length>3 && name.length<15)
+    {
+      document.write("Привіт, " + name + "<br>");
+    } 
+  else {document.write("Ви ввели не вірне ім'я" + "<br>");}  
+</script>
+
+<SCRIPT LANGUAGE="JavaScript">                                                                                 //Друге і третє завдання в одному
+function circle(form,changed) {
+with (Math) {
+var area = form.area.value;
+var radius = form.radius.value;
+var c = form.copypaste.value;
+if (changed == "radius") {
+area=radius*radius*3.14;
+c = area;
+}
+form.area.value = area;
+form.radius.value = radius;
+form.copypaste.value = c; 
+}
+}
+</script>
+
+<form method=post>
+<table border="5">
+<tr>
+<td>
+<p>Радіус:</p>
+</td>
+<td><input type="text" name="radius" onFocus="select()"></td>
+<td><input type=button value="Вычислити площу круга" onClick="circle(this.form,'radius')"></td>
+</tr>
+<tr>
+<td>
+<p>Площа круга:</p>
+</td>
+<center>
+<td><input type="text" name="area" onFocus="select()"></td>
+</tr>
+<tr>
+<td><p>Копіювання одного рядка в інший</p></td>
+<td><input type="text" name="copypaste" onfocus="select()"></td>
+</table> 
+</form>
+
+<script>                                                                                                         //Четверте завдання
+do{
+	var number = prompt("Введіть число більше 100", "    ");
+}
+while(number<100 || isNaN(number));
+</script>
+</body>
+</html>

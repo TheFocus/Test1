@@ -1,0 +1,114 @@
+/*FORM*/
+body {
+    margin: 0px;
+    margin-bottom: 0px;
+}
+
+.log-form {
+    display: block;
+    background-image: url(a.jpg);
+    background-size: cover;/*на весь екран*/
+    max-width: 100%;
+    max-height: 750px;
+    padding: 50px 0px;
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    margin: 0px;
+    position: relative;/*відносно нормального положення*/
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: auto;
+    min-height: 600px;
+    }
+
+.title {
+    color: #1a2f4b;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 40px;
+    padding 0px;
+    text-align: center;
+        }
+
+h1 {
+    font-size: 50px;
+    font-family: "RalewayExtraBold", sans-serif;
+    letter-spacing: 1px;
+    margin: 0px;
+    }
+
+form {
+    padding: 50px 0px;
+    background-attachment: scroll;
+    margin: 0px;
+    }
+
+.ite-feedback-inp {
+    height: 44px;
+    width: 385px;
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0%;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-repeat: repeat;/*покриває по вертикалі */
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    border-radius: 5px;
+    border: none;
+    border-style: none;
+    padding: 15px;
+    margin-bottom: 20px;
+    }
+
+.btn-wrap {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    }
+
+.btn {
+    background-color: #1a2f4b;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    color: #FFF;
+    font-family: "RalewayExtraBold", sans-serif;
+    font-size: 17px;
+    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    border-style: none;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+.error input,
+    .error textarea {
+      border: 1px solid red;
+    }
+
+.error {
+      color: red;
+/*END FORM*/
+
+
+

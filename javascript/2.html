@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	
+</head>
+<body>
+<SCRIPT LANGUAGE="JavaScript">
+
+function circle(form,changed) {
+with (Math) {
+var area = form.area.value;
+var radius = form.radius.value;
+if (changed == "radius") {
+var area=radius*radius*3.14;
+}
+
+form.area.value = area;
+form.radius.value = radius;
+}
+}
+</script>
+<form method=post>
+<table border="5">
+<tr>
+<td>
+<p>Диаметр окружности:</p>
+</td>
+<td align=center><input type=text name=radius size=17 value=0 onFocus="select()"></td>
+<td align=center><input type=button value="Вычислити площу круга" onClick="circle(this.form,'radius')"></td>
+</tr>
+<tr>
+<td>
+<p align="left">Пощадь круга:</p>
+</td>
+<center>
+<td><input type=text name=area size=17 value=0 onFocus="select()"></td>
+</tr>
+</table> 
+</form>
+</body>
+</html>
