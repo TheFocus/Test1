@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="jquery-2.2.3.min.js"></script>
+
+<meta charset="UTF-8">
+	<title>test</title>
+	
+
+<style type="text/css">
+
+
+.read_forward {
+	
+	cursor: pointer;
+	
+	
+    font-weight:bold;
+    
+}
+.container {
+	display:none;
+}
+
+
+
+</style>
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+	//эта функция для выдвижения меню по событию click
+	$("#read_forward").click(function()
+    {
+		$(this).next("div.container").slideToggle(300).siblings("div.container").slideUp("slow");
+       
+	});
+	
+	
+});
+</script>
+
+</head>
+<body>
+        <div class="read_forward" id="read_forward">Читати далі</div>
+		<div class="container">
+		111	
+		<div id="hide">Сховати</div>
+		</div>
+
+
+</body>
+</html>
